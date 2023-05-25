@@ -1,130 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Kowalski</title>
-      <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
-    <style>
-      @import "https://fonts.googleapis.com/css?family=Rubik+One";
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        height: 98%;
-        width: 98%;
-        background: #e53935;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kowalski</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(./bg.png);
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      padding-top: 100px;
+      color: #fff;
+      border-width: 4px;
+
+
+    }
+
+    h1 {
+      font-size: 32px;
+      background-color: black;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      background-color: black;
+
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #ff5a5f;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: white;
+    }
+
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 24px;
       }
 
-      .button::after,
-      .button::before {
-        position: absolute;
-        content: "";
-        transition: all 0.5s;
+      p {
+        font-size: 16px;
       }
 
-      .button {
-        display: inline-block;
-        padding: 20px 40px;
-        color: white;
-        position: absolute;
-        text-shadow: 2px 4px #000;
-        top: 60%;
-        left: 42%;
-        transform: translate(-50%, -50%);
-        vertical-align: middle;
-        font-family: "Rubik One", sans-serif;
-        text-decoration: none;
-        font-size: 1.5vw;
-        transition: all 0.5s;
-        background-color: #3498db;
+      .download-btn {
+        font-size: 14px;
+        padding: 8px 16px;
       }
-      .button::before {
-        bottom: -15px;
-        height: 15px;
-        width: 100%;
-        left: 8px;
-        transform: skewX(45deg);
-        background-color: #196090;
-      }
-      .button::after {
-        right: -15px;
-        height: 100%;
-        width: 15px;
-        bottom: -8px;
-        transform: skewY(45deg);
-        background-color: #124364;
-      }
-      .button:active {
-        margin-left: 10px;
-        margin-top: 10px;
-      }
-      .button:active::before {
-        bottom: -5px;
-        height: 5px;
-        left: 3px;
-      }
-      .button:active::after {
-        right: -5px;
-        width: 5px;
-        bottom: -3px;
-      }
-      .footer a {
-        color: aliceblue;
-        text-decoration: none;
-        font-family: "Rubik One", sans-serif;
-        font-size: medium;
-        font-weight: 400;
-      }
-    </style>
-  </head>
-  <body>
-    <div style="height: 95vh; width: 100vw; position: absolute">
-      <img
-        src="bg.png"
-        style="
-          object-fit: contain;
-          height: 100%;
-          width: 100%;
-          background-repeat: repeat;
-        "
-      />
-    </div>
-    <a class="button" href="QuizApp.apk" download
-      ><div style="position: relative">
-        Download App
-        <iframe
-          src="https://embed.lottiefiles.com/animation/21064"
-          style="
-            z-index: 100;
-            position: absolute;
-            border: none;
-            pointer-events: none;
-            top: -100%;
-            left: 20%;
-          "
-        ></iframe>
-      </div>
-    </a>
-    <div
-      class="footer"
-      style="
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        justify-content: space-evenly;
-        width: 90%;
-      "
-    >
-      <a href="https://vermillion-zabaione-fa2b4b.netlify.app/" target="_blank"
-        >@Praz544</a
-      >
-      <a href="https://github.com/Prasannas544" target="_blank">@Github</a>
-      <a href="https://www.linkedin.com/in/prasanna-swain/" target="_blank"
-        >@LinkedIn</a
-      >
-    </div>
-  </body>
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Download My App</h1>
+    <p>Get the amazing app now!</p>
+    <a href="QuizApp.apk" class="download-btn" download="">Download Now</a>
+  </div>
+  <div class="footer" style="
+    position: absolute;
+    color: #fff;
+    font-size: large;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+  ">
+    <a href="https://vermillion-zabaione-fa2b4b.netlify.app/" target="_blank">@Praz544</a>
+    <a href="https://github.com/Prasannas544" target="_blank">@Github</a>
+    <a href="https://www.linkedin.com/in/prasanna-swain/" target="_blank">@LinkedIn</a>
+  </div>
+
+
+</body>
+
 </html>
